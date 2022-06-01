@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CatalogService {
 
-  uri = 'http://localhost:4201';
+  uri = 'https://serverhearttc.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
