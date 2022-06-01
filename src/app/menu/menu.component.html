@@ -1,0 +1,73 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.component.css">
+</head>
+
+<body>
+    <section class="menu-container">
+        <div class="video-container">
+            <video type="video/mp4" playsinline loop autoplay [muted]="true"
+                src="../../assets/video-background-2.mp4"></video>
+        </div>
+
+        <div class="nav">
+            <img src="../../assets/card.png" class="imageCard">
+            <h1>Les TC jouent aux cartes</h1>
+            <div class="menu">
+                <!-- <button (click)="clickRegister()">S'inscrire</button> -->
+                <button class="Jouer" (click)="clickGame()">Jouer !</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="presentation">
+
+        
+        <div class="titre-presentation">
+            <h3>Rejoignez la bataille</h3>
+            <h2 class="légende">Devenez une légende de HeartTC</h2>
+        </div>
+
+        <div class="imageRace">
+        </div>
+
+        <div class="imageIntro">
+            <div class="fin-presentation">
+                <div class="fin-prensentation-content">
+                    <h3>Gagnez chaque battaille</h3>
+                    <h2>Remportez la guerre</h2>
+                    <button class="Jouer" (click)="clickGame()">Jouez gratuitement</button>
+                </div>
+            </div>
+        </div>
+
+      
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="logo">
+            <img src="../../assets/logo.png">
+        </div>
+        <div class="nom-team">
+            <div>Gralid Games</div>
+        </div>
+        <div class="Droit">
+            <div>© 2022 Gralid Games Inc. Tous droits réservés. Gralid Games et HeartTC sont des marques, des marques de service ou des marques déposées de Gralid Games, Inc.</div>
+        </div>
+        <div class="pegi">
+            <img src="../../assets/pegi12.png">
+            <img src="../../assets/violence.png">
+        </div>
+    </footer>
+</body>

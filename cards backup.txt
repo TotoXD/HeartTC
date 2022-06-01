@@ -1,0 +1,575 @@
+{
+    "_id": {
+        "$oid": "6234a068a71e41b75a470913"
+    },
+    "name": "Dévoreur de Gemme",
+    "atk": {
+        "$numberInt": "2"
+    },
+    "cost": {
+        "$numberInt": "1"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "race": "Dragonkin",
+    "img": "GemEater.jpg"
+}
+
+{
+    "_id": {
+        "$oid": "6234a07ba71e41b75a470915"
+    },
+    "name": "Dragonnet",
+    "atk": {
+        "$numberInt": "1"
+    },
+    "cost": {
+        "$numberInt": "1"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "atkbuff": {
+        "$numberInt": "1"
+    },
+    "defbuff": {
+        "$numberInt": "1"
+    },
+    "effect": "Loner",
+    "race": "Dragonkin",
+    "img": "Dragling.jpg",
+    "effectText": "Solitaire : Gagne +1/+1 si vous n'avez pas d'autres Dragonkin en jeu"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0c2a71e41b75a470918"
+    },
+    "name": "Chuchoteur Herbu",
+    "atk": {
+        "$numberInt": "2"
+    },
+    "cost": {
+        "$numberInt": "2"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "race": "Dragonkin",
+    "effect": "Frenzy",
+    "img": "WindWhisper.jpg",
+    "effectText": "Frénésie : Inflige deux fois ses dégâts lors de l'attaque"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0caa71e41b75a470919"
+    },
+    "name": "Chuchoteur Rampant",
+    "atk": {
+        "$numberInt": "1"
+    },
+    "cost": {
+        "$numberInt": "2"
+    },
+    "def": {
+        "$numberInt": "4"
+    },
+    "race": "Dragonkin",
+    "effect": "Taunt",
+    "img": "EarthWhisper.jpg",
+    "effectText": "Provocation"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0d3a71e41b75a47091a"
+    },
+    "name": "Contempleur Océanique",
+    "atk": {
+        "$numberInt": "3"
+    },
+    "cost": {
+        "$numberInt": "3"
+    },
+    "def": {
+        "$numberInt": "3"
+    },
+    "race": "Dragonkin",
+    "effect": "Draw",
+    "img": "WaterGazer.jpg",
+    "effectSize": {
+        "$numberInt": "2"
+    },
+    "effectText": "Apparition : Piochez 2 cartes"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0dca71e41b75a47091b"
+    },
+    "name": "Contempleur Lunaire",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "3"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "race": "Dragonkin",
+    "effect": "Dmg",
+    "img": "MoonGazer.jpg",
+    "effectDmg": {
+        "$numberInt": "3"
+    },
+    "effectSize": {
+        "$numberInt": "1"
+    },
+    "effectText": "Apparition : Inflige 3 dégâts à une unité"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0e7a71e41b75a47091c"
+    },
+    "name": "Azgart le Juste",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "4"
+    },
+    "def": {
+        "$numberInt": "6"
+    },
+    "race": "Dragonkin",
+    "effect": "Taunt",
+    "img": "LizardKnight.jpg",
+    "effectText": "Provocation"
+}
+
+
+
+{
+    "_id": {
+        "$oid": "6234a0f5a71e41b75a47091d"
+    },
+    "name": "Bark le Destructeur",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "4"
+    },
+    "def": {
+        "$numberInt": "5"
+    },
+    "race": "Dragonkin",
+    "effect": "Lifesteal",
+    "img": "Bark.jpg",
+    "effectText": "Vol de Vie"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a0ffa71e41b75a47091e"
+    },
+    "name": "Dert le Solitaire",
+    "atk": {
+        "$numberInt": "3"
+    },
+    "cost": {
+        "$numberInt": "5"
+    },
+    "def": {
+        "$numberInt": "4"
+    },
+    "atkbuff": {
+        "$numberInt": "4"
+    },
+    "defbuff": {
+        "$numberInt": "4"
+    },
+    "effect": "Loner",
+    "race": "Dragonkin",
+    "img": "LoneWarrior.jpg",
+    "effectText": "Solitaire : Gagne +4/+4 si vous n'avez pas d'autres Dragonkin en jeu"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a107a71e41b75a47091f"
+    },
+    "name": "Azog le Destructeur",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "6"
+    },
+    "def": {
+        "$numberInt": "5"
+    },
+    "effect": "Dmg",
+    "race": "Dragonkin",
+    "img": "WalkingDisaster.jpg",
+    "effectSize": {
+        "$numberInt": "0"
+    },
+    "effectDmg": {
+        "$numberInt": "3"
+    },
+    "effectText": "Apparition: Inflige 3 dégâts à toutes les unités adverses"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a10fa71e41b75a470920"
+    },
+    "name": "Souverain Incendiaire",
+    "atk": {
+        "$numberInt": "7"
+    },
+    "cost": {
+        "$numberInt": "7"
+    },
+    "def": {
+        "$numberInt": "7"
+    },
+    "effect": "DmgAll",
+    "race": "Dragonkin",
+    "img": "RulerOfFire.jpg",
+    "effectDmg": {
+        "$numberInt": "6"
+    },
+    "effectText": "Apparition: Inflige 6 de dégâts à toutes les unités"
+}
+
+{
+    "_id": {
+        "$oid": "6234a12ca71e41b75a470922"
+    },
+    "name": "Souverain Cristallin",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "7"
+    },
+    "def": {
+        "$numberInt": "6"
+    },
+    "atkbuff": {
+        "$numberInt": "2"
+    },
+    "defbuff": {
+        "$numberInt": "2"
+    },
+    "effect": "AtkBuff",
+    "race": "Dragonkin",
+    "img": "RulerOfCrystals.jpg",
+    "effectText": "Gagne +2/+2 à chaque attaque portée"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a13ea71e41b75a470923"
+    },
+    "name": "Souverain Rocailleux",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "7"
+    },
+    "def": {
+        "$numberInt": "10"
+    },
+    "race": "Dragonkin",
+    "effect": "Taunt",
+    "img": "RulerOfEarth.jpg",
+    "effectText": "Provocation"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a146a71e41b75a470924"
+    },
+    "name": "Souverain Venteux",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "7"
+    },
+    "def": {
+        "$numberInt": "5"
+    },
+    "race": "Dragonkin",
+    "effect": "Frenzy",
+    "img": "RulerOfWind.jpg",
+    "effectText": "Frénésie : Inflige deux fois ses dégâts lors de l'attaque"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a14ea71e41b75a470925"
+    },
+    "name": "Souverain Verdoyant",
+    "atk": {
+        "$numberInt": "6"
+    },
+    "cost": {
+        "$numberInt": "7"
+    },
+    "def": {
+        "$numberInt": "7"
+    },
+    "atkbuff": {
+        "$numberInt": "0"
+    },
+    "defbuff": {
+        "$numberInt": "6"
+    },
+    "effect": "Buff",
+    "race": "Dragonkin",
+    "img": "RulerOfWood.jpg",
+    "effectText": "Apparition: Confére +6 Points de Vie à une unité"
+}
+
+
+
+{
+    "_id": {
+        "$oid": "6234a159a71e41b75a470926"
+    },
+    "name": "Médecin de peste",
+    "atk": {
+        "$numberInt": "1"
+    },
+    "cost": {
+        "$numberInt": "1"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "race": "Humain",
+    "effect": "Poison",
+    "img": "PlagueDoctor.jpg",
+    "effectDmg": {
+        "$numberInt": "2"
+    },
+    "effectText": "Inflige 2 dégâts non mortels supplémentaires lors de l'attaque"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a163a71e41b75a470927"
+    },
+    "name": "Shirley Pilleuse de Tombe",
+    "atk": {
+        "$numberInt": "2"
+    },
+    "cost": {
+        "$numberInt": "1"
+    },
+    "def": {
+        "$numberInt": "1"
+    },
+    "race": "Humain",
+    "effect": "NoCounter",
+    "img": "Pillager.jpg",
+    "effectText": "Attaque sans subir de riposte"
+}
+
+{
+    "_id": {
+        "$oid": "6234a16ea71e41b75a470928"
+    },
+    "name": "Fantassin blindé",
+    "atk": {
+        "$numberInt": "3"
+    },
+    "cost": {
+        "$numberInt": "2"
+    },
+    "def": {
+        "$numberInt": "3"
+    },
+    "race": "Humain",
+    "img": "ArmoredSoldier.jpg"
+}
+
+{
+    "_id": {
+        "$oid": "6234a175a71e41b75a470929"
+    },
+    "name": "Le Déboiseur",
+    "atk": {
+        "$numberInt": "3"
+    },
+    "cost": {
+        "$numberInt": "3"
+    },
+    "def": {
+        "$numberInt": "2"
+    },
+    "race": "Humain",
+    "effect": "Cleave",
+    "img": "WoodCutter.jpg",
+    "effectText": "Inflige ses dégâts à toutes les unités ennemis"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a17ea71e41b75a47092a"
+    },
+    "name": "Capitaine M.E.C.H",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "4"
+    },
+    "def": {
+        "$numberInt": "3"
+    },
+    "race": "Humain",
+    "effect": "KillBuff",
+    "img": "CaptainMech.jpg",
+    "atkBuff": {
+        "$numberInt": "2"
+    },
+    "effectText": "Gagne +2 attaque lorsqu'il tue une unité"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a18aa71e41b75a47092b"
+    },
+    "name": "Le Débroussailleur",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "4"
+    },
+    "def": {
+        "$numberInt": "4"
+    },
+    "atkbuff": {
+        "$numberInt": "2"
+    },
+    "defbuff": {
+        "$numberInt": "2"
+    },
+    "effect": "Loner",
+    "race": "Humain",
+    "img": "PathMaker.jpg",
+    "effectText": "Solitaire : Gagne +4/+4 si vous n'avez pas d'autres Dragonkin en jeu"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a191a71e41b75a47092c"
+    },
+    "name": "Marcheur Lourd",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "5"
+    },
+    "def": {
+        "$numberInt": "7"
+    },
+    "race": "Humain",
+    "effect": "Taunt",
+    "img": "WalkerD.jpg",
+    "effectText": "Provocation"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a19ba71e41b75a47092d"
+    },
+    "name": "Epher, la peste",
+    "atk": {
+        "$numberInt": "4"
+    },
+    "cost": {
+        "$numberInt": "6"
+    },
+    "def": {
+        "$numberInt": "5"
+    },
+    "race": "Humain",
+    "effect": "Poison",
+    "img": "ThePlague.jpg",
+    "effectDmg": {
+        "$numberInt": "5"
+    },
+    "effectText": "Inflige 5 dégâts non mortels supplémentaires lors de l'attaque"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a1a3a71e41b75a47092e"
+    },
+    "name": "Piétineur Lourd",
+    "atk": {
+        "$numberInt": "8"
+    },
+    "cost": {
+        "$numberInt": "6"
+    },
+    "def": {
+        "$numberInt": "8"
+    },
+    "race": "Humain",
+    "img": "WarMammoth.png"
+}
+
+
+{
+    "_id": {
+        "$oid": "6234a1ada71e41b75a47092f"
+    },
+    "name": "Le Mastermind",
+    "atk": {
+        "$numberInt": "5"
+    },
+    "cost": {
+        "$numberInt": "4"
+    },
+    "def": {
+        "$numberInt": "6"
+    },
+    "race": "Humain",
+    "effect": "Mastermind",
+    "img": "Mastermind.jpg",
+    "effectSize": {
+        "$numberInt": "3"
+    },
+    "effectText": "Apparition: Confère +3/+3 à toutes les cartes même celle en main"
+}

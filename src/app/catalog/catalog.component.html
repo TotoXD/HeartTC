@@ -1,0 +1,151 @@
+<!-- Permet de gérer l'affichage de la page -->
+
+<!-- On fait un menu pour trier les cartes selon leur type -->
+
+<!-- <select [(ngModel)]="currentType">
+<option
+*ngFor="let cur of types"
+value={{cur.type}}
+>{{cur.name}}</option>
+</select> -->
+
+<!-- On écrit en dessous le tri sélectionné -->
+
+<!-- <p>{{currentType}}</p> -->
+
+<!-- On met tout dans un material.card qui permet de mettre du texte et des images -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalog.component.css">
+</head>
+
+<header>
+    <div class="nav">
+        <img src="../../assets/swords.png" id="mainImage">
+        <div id="title">
+            <h1>Que la bataille commence !</h1>
+        </div>
+        <div class="menu">
+            <button (click)="clickMenu()">Menu</button>
+        </div>
+        <br>
+    </div>
+</header>
+
+
+
+
+<body *ngIf="gagnant=='aucun'">
+    
+    <span *ngIf="!connection">
+        <h2>En attente d'un autre joueur...</h2>
+    </span>
+
+    <span *ngIf="connection">
+
+        <div id="playground">
+
+            <div class="playgroundAlly">
+
+                <div class="playgroundAllyProfile">
+                    <h2 class="titleAlly">{{nomPlayer}}</h2>
+                    <img src="{{img}}" class={{imgClass}}>
+                    <p class="hpAlly">{{pvPlayer}}</p>
+                    <p class="mpAlly"> MP : {{ energiePlayer }} (+2 par tour)</p>
+                    <p class="playerName">{{playerNumber}} (Vous)</p>
+                </div>
+
+                <div class="playgroundAllyCard">
+                    <app-card *ngIf="selectedCard" [data]="selectedCard" [flipped]="false" [zoom]="0.3"
+                        class="playgroundCard"></app-card>
+                </div>
+
+            </div>
+
+            <div class="playgroundEnnemy">
+
+                <div class="playgroundEnnemyCard">
+                    <app-card [data]="enemyCard" [flipped]="false" [zoom]="0.3" class="playgroundCard"></app-card>
+                </div>
+
+                <div class="playgroundEnnemyProfile">
+                    <h2 class="titleEnnemy">{{nomAdversaire}}</h2>
+                    <img src="{{imageDeckOpponent}}" class="{{classDeckOpponent}}">
+                    <p class="hpEnnemy">{{pvAdversaire}}</p>
+                    <p class="mpEnnemy"> MP : {{ energieAdversaire }} (+2 par tour)</p>
+                    <p class="playerName">{{opponentPlayerNumber}}</p>
+                </div>
+
+            </div>
+
+            <div class="finDeTour">
+                
+                <button *ngIf="playerReady == 0" class="button" (click)="clickfight()">Cliquez quand vous êtes prêt
+                    </button>
+                <button *ngIf="playerReady == 1" class="buttonNotReady" (click)="clickfight()">En attente de l'adversaire
+                    !</button>
+                <div class="annonce">{{annonce}}</div>
+            </div>
+
+            <div id="playerHand">
+                <div *ngFor="let card of mainJoueur">
+                    <div (click)="onSelect(card)" id="playerCardDiv">
+                        <app-card *ngIf="selectedCardId!=card.id" [data]="card" [flipped]="false" [zoom]="0.3"
+                            id="playerCard"></app-card>
+
+                    </div>
+
+                </div>
+                <div id="playerDraw">
+                    <img id="drawCardFace" src="{{drawColor}}" desc="drawCardFace">
+                    <h2 id="drawTitle">{{ numberCardsInDraw }} cartes restantes dans la pioche</h2>
+                </div>
+            </div>
+        </div>
+    </span>
+</body>
+
+<!-- Pour mettre un espace de chatting -->
+
+<body *ngIf="gagnant!='aucun'">
+
+    <div class="End">
+        <h1 class="titleEnd">{{ gagnant }}</h1>
+    </div>
+
+</body>
+<!--
+    <div class="container-fluid">
+        <div class="row" style="text-align:center">
+            <h2>Tchat</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col sm-2">
+                <div style="margin-top:19px;" class="pull-right"> 
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center" class="row">
+            <div class="well" style="height:100px; padding:15px;">
+                <div *ngFor="let item of messageArray">
+                <span>{{item.message}}</span>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center" class="row">
+            <div class="col-sm-10">
+                <input type="text" class="form-control" [(ngModel)]="messageText">            
+            </div>
+            <div class="col-sm-2">
+                    <button type="button" class="btn btn-success pull-right" (click)="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <p></p>
+-->
+
+<!-- *ngFor="let currentCard of list|cardType:currentType" Pour afficher toutes les cartes-->

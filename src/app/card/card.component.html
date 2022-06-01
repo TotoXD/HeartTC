@@ -1,0 +1,33 @@
+<!-- Permet de gérer l'affichage d'une carte et ses actions avec son code typescript -->
+
+<div *ngIf="data !== null" class="card" [ngClass]="{'flipped': flipped}" [ngStyle]="cardStyle">
+    
+    <div *ngIf="data.img !== undefined" class="face front">
+
+        <div class="row">
+            <p class="cost">{{data.cost}}</p>
+            <p class="title">{{data.name}}</p>
+        </div>
+        
+        <div class="row img_container">
+            <img src="{{data.img}}" alt="{{data.name}}" [ngStyle]="imgStyle" class="img">
+            <div class="{{data.overlayColor}}"></div>
+        </div>
+
+        <div *ngIf="data.img !== undefined" class="row desc_container">
+            <p class="desc">{{data.effectText}}</p>
+        </div>
+        
+        <div class="row atk_def_container">
+            <p class="atk">{{data.current_atk}}</p>
+            <p class="def">{{data.current_def}}</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="{{data.backColor}}"></div>
+
+</div>
+

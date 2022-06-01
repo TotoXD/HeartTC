@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="choose-deck.component.css">
+    </head>
+
+    <body>  
+
+    <div class="titre">
+        <h1>Votre combat commence ici</h1>
+        <h2>Veuillez choisir un deck.</h2>
+        <img src="../../assets/divider.png">
+        
+    </div>
+    <div></div>
+
+    <div id="playground">
+
+        <div class="deckRed" (click)="onClick(1)">
+            <h2 class="titleRed">Verdantier, Berceau des Machines</h2>
+            <img src="../../assets/overlay-profile-red.png" class="profileImageRed">
+            <p class="hpRed">40</p>
+        </div>
+
+        <div class="deckGreen" (click)="onClick(2)">
+            <h2 class="titleGreen">Ealeen, Souveraine des Peuples Elfiques</h2>
+            <img src="../../assets/overlay-profile-green.png" class="profileImageGreen">
+            <p class="hpGreen">25</p>
+        </div>
+
+        <div class="deckBlue" (click)="onClick(3)">
+            <h2 class="titleBlue">Galathur, Dragon Primordial</h2>
+            <img src="../../assets/overlay-profile-blue.png" class="profileImageBlue">
+            <p class="hpBlue">30</p>
+        </div>
+        
+    </div>
+
+    </body>
+</html>
+

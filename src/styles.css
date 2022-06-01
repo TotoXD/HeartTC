@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+/* COMMUN */
+
+html {
+    /* Background */
+    background-color: var(--couleur-creme);
+    background-image: url("https://www.transparenttextures.com/patterns/double-lined.png");
+    /* Variable */
+    --couleur-creme : #f4e2ba;
+    --couleur-marron : #543434;
+    --couleur-bleue : #273049;
+    --couleur-or : #c8aa6e;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 00;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: var(--couleur-marron);
+}

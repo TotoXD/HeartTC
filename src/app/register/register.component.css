@@ -1,0 +1,204 @@
+body {
+    background-color: #06002b;
+    background-image: url("../../assets/darkk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img{
+    max-width: 7vw;
+    max-height: auto;
+    margin-left: 1vw;
+}
+.retour{
+    margin-top:-7vw;
+    margin-left: 85vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    color: var(--couleur-or);
+    font-size: 2vw;
+}
+
+.retour button{
+    margin: 10px;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    color:var(--couleur-marron);
+    background-color: var(--couleur-creme);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 15px 0 rgba(0,0,0,0.19);
+
+}
+
+.retour button:hover{
+    background-color: var(--couleur-marron);
+    color:var(--couleur-creme);
+    cursor: pointer;
+    border: 2px solid;
+    border-color: var(--couleur-marron);
+}
+
+
+.titre{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+.titre h1{
+    color: var(--couleur-creme);
+    font-family: 'Montserrat';
+    font-size: 4vw;
+}
+
+.titre h2{
+    color: var(--couleur-or);
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+    margin-top: 1vw;
+}
+
+.titre.image{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.menu {
+    margin: 0 auto 0 auto;
+    width: 100vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    color: var(--couleur-or);
+    display: flex;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+.menu form .mail{
+    margin-bottom: 1.5vw;
+    margin-left: -10vw;
+}
+.menu form input {
+    display: flex;
+    align-items: center;
+    margin-left: 30vw;
+    margin-top: -2.3vw;
+    border: 2px solid var(--couleur-or);
+    border-radius: 4px;
+    width: 12vw;
+    height: 1.5vw;
+}
+.menu form .pseudo{
+    margin-bottom: 1.5vw;
+    margin-left: -10vw;
+}
+.menu form .password {
+    margin-left: -10vw;
+}
+
+.menu form button{
+    margin-top: 2vw;
+}
+.menu button{
+    margin: 10px;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    color:var(--couleur-marron);
+    background-color: var(--couleur-creme);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 15px 0 rgba(0,0,0,0.19);
+
+}
+.menu .already{
+    margin: 0 auto 0 auto;
+    width: 100vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    color: var(--couleur-or);
+    display: flex;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+.menu .already button{
+    margin-left: -2vw;
+}
+.menu button:hover{
+    background-color: var(--couleur-marron);
+    color:var(--couleur-creme);
+    cursor: pointer;
+    border: 2px solid;
+    border-color: var(--couleur-marron);
+}
+
+
+footer{
+    text-align: center;
+    border-top:solid;
+    border-width:10px;
+    border-color:var(--couleur-or);
+    margin-top: -9vw;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+    background-color: #111111;
+}
+footer .nom-team{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    color: var(--couleur-or);
+    font-size: 40px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+footer .logo img{
+    margin-top: 5px;
+    height: 3%;
+    width: 3%;
+    margin-left: -1vw;
+}
+
+footer .Droit{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    color: var(--couleur-or);
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 5px rgb(0 0 0 / 40%);
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+footer .pegi img{
+    width: 80px;
+    height: 80px;
+    padding: 0 20px 0 20px;
+}

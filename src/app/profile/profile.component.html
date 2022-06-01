@@ -1,0 +1,16 @@
+<h1>Votre profil : {{ userProfile?.pseudo }}</h1>
+
+<p>Nombre de parties au total : {{ userProfile?.totalGames }}</p>
+<p>Nombre de victoires au total : {{ userProfile?.totalWins }}</p>
+<p>Pourcentage de victoire : {{ winrate }}</p>
+
+<label for="deck-select">Deck choisi : </label>
+
+<select name="decks" id="deck-select">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+</select>
+<button class="Save-Deck" (click)="saveDeck()">Sauvegarder votre deck</button>
+
+<p>Effacer votre compte : </p>

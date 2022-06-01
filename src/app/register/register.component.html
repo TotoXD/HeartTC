@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="register.component.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="../../assets/card.png">
+    </div>
+    <div class="retour">
+        <button class="retour" (click)="clickMenu()">Retour menu</button>
+    </div>
+
+    <div class="titre">
+        <h1> Votre aventure commence ici</h1>
+        <h2>Pour commencer, inscrivez vous. </h2>
+        <img src="../../assets/divider.png">
+        
+    </div>
+
+
+
+    <div class="menu">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <div class="mail">
+                 <label for="mailAddress">
+                    Adresse Mail
+                </label>
+                <input id="mailAddress" type="email" formControlName="mailAddress" required>
+            </div>
+
+            <div class="pseudo">
+                <label for="pseudo">
+                    Pseudo
+                </label>
+                <input id="pseudo" type="text" formControlName="pseudo" required>
+            </div>
+            <div class="password">
+                <label for="password">
+                    Mot de passe
+                </label>
+                <input id="password" type="password" formControlName="password" required>
+            </div>
+
+            <button class="button" type="submit">S'inscrire</button>
+        </form>
+        <div class="already">
+            Déjà inscrit ? Connectez vous 
+            <button class="Jouer" (click)="login()">Se connecter !</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="logo">
+            <img src="../../assets/logo.png">
+        </div>
+        <div class="nom-team">
+            <div>Gralid Games</div>
+        </div>
+        <div class="Droit">
+            <div>© 2022 Gralid Games Inc. Tous droits réservés. Gralid Games et HeartTC sont des marques, des marques de service ou des marques déposées de Gralid Games, Inc.</div>
+        </div>
+        <div class="pegi">
+            <img src="../../assets/pegi12.png">
+            <img src="../../assets/violence.png">
+        </div>
+    </footer>
+</body>
+
+</html>

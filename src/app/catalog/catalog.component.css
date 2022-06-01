@@ -1,0 +1,369 @@
+header {
+    background-image: url("../../assets/wood_wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+body {
+    background-image: url("../../assets/201532.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2%;
+    color: var(--couleur-creme);
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: var(--couleur-bleue);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.titleEnd {
+    font-size: 35px;
+    align-items: center;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.End {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.annonce {
+    font-size: 20px;
+    text-shadow: 3px 3px 8px #000000;
+    padding: 1%;
+}
+
+.finDeTour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    padding: auto;
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.finDeTour .button {
+    padding: 10px 15px;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: var(--couleur-marron);
+    background-color: var(--couleur-creme);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.finDeTour button:hover {
+    background-color: #f17070;
+    color: #2e1c1c;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #2e1c1c;
+}
+
+.finDeTour .button:active {
+    background-color: #f17070;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.24);
+    transition-duration: 0.1s;
+    transform: translateY(4px);
+}
+
+.buttonNotReady {
+    padding: 10px 15px;
+    font-family: Montserrat;
+    font-size: 20px;
+    color: var(--couleur-marron);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 15px 0 rgba(0, 0, 0, 0.19);
+    background-color: #40dd20;
+}
+
+.playgroundEnnemy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.playgroundEnnemyProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-left: 10%;
+    zoom: 0.8;
+    grid-column: 2;
+}
+
+.playgroundEnnemyCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+}
+
+.titleEnnemy {
+    top: 75px;
+    left: 5px;
+    position: relative;
+    font-size: 15px;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.hpEnnemy {
+    top: -138px;
+    left: 5px;
+    position: relative;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px #000000;
+}
+.mpEnnemy {
+    top: -50px;
+    left: 5px;
+    position: relative;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px #000000;
+}
+.playgroundAlly {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.playgroundAllyProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    zoom: 0.8;
+    grid-column: 1;
+}
+
+.playgroundAllyCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+}
+
+.titleAlly {
+    top: 75px;
+    left: 5px;
+    position: relative;
+    font-size: 15px;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.hpAlly {
+    top: -138px;
+    left: 5px;
+    position: relative;
+    font-size: 50px;
+    text-shadow: 3px 3px 8px #000000;
+}
+.mpAlly {
+    top: -50px;
+    left: 5px;
+    position: relative;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.profileImageRed {
+    background-image: url("../../assets/Humains/Profile.png");
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #000000;
+    zoom: 0.8;
+}
+
+.profileImageBlue {
+    background-image: url("../../assets/Lizards/Profile.png");
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #000000;
+    zoom: 0.8;
+}
+
+.profileImageGreen {
+    background-image: url("../../assets/Elf/Profile.png");
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #000000;
+    zoom: 0.8;
+}
+
+#playground {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#playground h2 {
+    align-items: center;
+    text-align: center;
+    padding: 2.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#playerHand {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    background-image: url(/../../assets/board.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: var(--couleur-bleue);
+    border-top: solid;
+    border-top-width: 5px;
+    border-top-color: var(--couleur-bleue);
+    width: 100%;
+    /* height: 20vh; */
+    top: 30px;
+    bottom: 0px;
+    position: absolute;
+    grid-row: 3;
+    grid-column: 1/3;
+}
+
+#playerHand:first-child,
+#playerHand:last-child {
+    margin-left: auto;
+    height: auto;
+}
+
+#playerCardDiv {
+    background-color: inherit;
+    border: 0;
+    padding: 2%;
+    position: relative;
+}
+
+#playerCard:hover {
+    zoom: 120%;
+}
+
+#playerDraw {
+    color: var(--couleur-creme);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+
+#drawCardFace {
+    height: 100%;
+    width: auto;
+    zoom: 0.01;
+    padding-left: 10%;
+}
+
+#drawTitle {
+    align-items: center;
+    text-align: center;
+    padding-left: 20%;
+    font-family: 'Montserrat', sans-serif
+}
+
+
+
+
+
+
+
+.nav {
+    background-color: inherit;
+}
+
+.nav {
+    padding: 2.5% 2.5% 0 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav h1 {
+    font-family: Montserrat;
+    color: var(--couleur-creme);
+    text-shadow: 3px 3px 8px #000000;
+}
+
+.nav menu {
+    top: 0px;
+    left: 1180px;
+    margin: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: var(--couleur-marron);
+    background-color: var(--couleur-creme);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav button {
+    padding: 10px 15px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: var(--couleur-marron);
+    background-color: var(--couleur-creme);
+    border: 2px solid;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav button:hover {
+    background-color: var(--couleur-marron);
+    color: var(--couleur-creme);
+    cursor: pointer;
+    border: 2px solid;
+    border-color: var(--couleur-marron);
+}
+
+.nav #title {
+    padding: 2.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav #mainImage {
+    zoom: 20%;
+}
+
+.playerName {
+    font-size: 28px;
+}
