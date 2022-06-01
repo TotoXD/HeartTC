@@ -3,6 +3,14 @@ body {
     background-image: url("../../assets/dark3.png");
     background-size: cover;
     background-repeat: no-repeat;
+    /* width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 
 .logo img{

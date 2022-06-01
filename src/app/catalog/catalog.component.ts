@@ -78,7 +78,7 @@ export class CatalogComponent implements OnInit {
     this.optionDeck = this.playService.getDeck();
     console.log(this.optionDeck);
     console.log(this.typeAdversaire);
-
+    
     // // On initialise la carte enemie
     // this.cardService.getCardsByRace("Elfe").subscribe((elf: any)=>{
     //   this.enemyCard=elf[3];
@@ -197,7 +197,7 @@ export class CatalogComponent implements OnInit {
     //this.enemyCard=this.peonElf;
 
   }
-
+  
 
 
   // Initialisation des composants

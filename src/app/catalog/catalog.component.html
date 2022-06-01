@@ -35,13 +35,10 @@ value={{cur.type}}
     </div>
 </header>
 
-
-
-
 <body *ngIf="gagnant=='aucun'">
     
     <span *ngIf="!connection">
-        <h2>En attente d'un autre joueur...</h2>
+        <h2 class="loadingTitle">En attente d'un autre joueur...</h2>
     </span>
 
     <span *ngIf="connection">
@@ -51,11 +48,12 @@ value={{cur.type}}
             <div class="playgroundAlly">
 
                 <div class="playgroundAllyProfile">
+                    <p class="playerName">{{playerNumber}} (Vous)</p>
                     <h2 class="titleAlly">{{nomPlayer}}</h2>
                     <img src="{{img}}" class={{imgClass}}>
                     <p class="hpAlly">{{pvPlayer}}</p>
-                    <p class="mpAlly"> MP : {{ energiePlayer }} (+2 par tour)</p>
-                    <p class="playerName">{{playerNumber}} (Vous)</p>
+                    <p class="mpAlly"> {{ energiePlayer }}</p>
+                    <p class="manatitle">(+ 2 MP / tour)</p>
                 </div>
 
                 <div class="playgroundAllyCard">
@@ -72,11 +70,12 @@ value={{cur.type}}
                 </div>
 
                 <div class="playgroundEnnemyProfile">
+                    <p class="playerName">{{opponentPlayerNumber}}</p>
                     <h2 class="titleEnnemy">{{nomAdversaire}}</h2>
                     <img src="{{imageDeckOpponent}}" class="{{classDeckOpponent}}">
                     <p class="hpEnnemy">{{pvAdversaire}}</p>
-                    <p class="mpEnnemy"> MP : {{ energieAdversaire }} (+2 par tour)</p>
-                    <p class="playerName">{{opponentPlayerNumber}}</p>
+                    <p class="mpEnnemy">{{ energieAdversaire }}</p>
+                    <p class="manatitle">(+ 2 MP / tour)</p>
                 </div>
 
             </div>
@@ -100,8 +99,8 @@ value={{cur.type}}
 
                 </div>
                 <div id="playerDraw">
-                    <img id="drawCardFace" src="{{drawColor}}" desc="drawCardFace">
                     <h2 id="drawTitle">{{ numberCardsInDraw }} cartes restantes dans la pioche</h2>
+                    <img id="drawCardFace" src="{{drawColor}}" desc="drawCardFace"> 
                 </div>
             </div>
         </div>
@@ -114,6 +113,9 @@ value={{cur.type}}
 
     <div class="End">
         <h1 class="titleEnd">{{ gagnant }}</h1>
+    </div>
+    <div class="buttonend">
+        <button (click)="clickMenu()">Retour Menu</button>
     </div>
 
 </body>

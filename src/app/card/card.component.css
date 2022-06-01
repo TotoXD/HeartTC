@@ -4,8 +4,8 @@
 }
 
 .card {
-    width: 615px;
-    height: 825px;
+    width: 720px;
+    height: 1008px;
     transform-style: preserve-3d;
     position: relative;
     transition: transform 1s;
@@ -65,7 +65,7 @@
 }
 
 .cost {
-    font-size: 5rem;
+    font-size: 6rem;
     color: white;
     font-weight: bold;
     font-family: 'Macondo', cursive;
@@ -74,8 +74,8 @@
     margin: 0;
     z-index: 40;
     position: relative;
-    top:17px;
-    left:48px;
+    top:20px;
+    left:55px;
     text-shadow:
     -5px -5px 0 var(--couleur-bleue),
      0   -5px 0 var(--couleur-bleue),
@@ -174,7 +174,7 @@
     margin-top: 5%;
     overflow: hidden;
     position: absolute;
-    top:550px;
+    top:660px;
     z-index: 35;
     padding-right: 15%;
     padding-left: 5%;
@@ -197,12 +197,12 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    top:-325px;
-    z-index: 40;
+    top:-425px;
+    z-index: 30;
 }
 
     .atk{
-        font-size: 6rem;
+        font-size: 7rem;
         color: white;
         font-weight: bold;
         font-family: 'Macondo', cursive;
@@ -223,7 +223,7 @@
     }
 
     .def{
-        font-size: 6rem;
+        font-size: 7rem;
         color: white;
         font-weight: bold;
         font-family: 'Macondo', cursive;
