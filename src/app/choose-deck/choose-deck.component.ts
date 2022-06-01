@@ -21,7 +21,7 @@ export class ChooseDeckComponent implements OnInit {
   ngOnInit(){
     this.nom1 = "Ealeen, Souveraine des Peuples Elfiques"
     this.nom2 = "Verdantier, Berceau des Machines"
-    this.nom3 = "Monster Muller, Effaceur de vendredi matin"
+    this.nom3 = "Galathur, Dragon Primordial"
   }
 
   onClick(deck:number){

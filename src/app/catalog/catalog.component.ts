@@ -325,7 +325,7 @@ export class CatalogComponent implements OnInit {
           //CARD_DECK2[i].sendToCardComponent()
         }
         
-        this.nomPlayer = "Monster Muller, Effaceur de vendredi matin";
+        this.nomPlayer = "Galathur, Dragon Primordial";
 
         this.img="../../assets/overlay-profile-blue.png"
         this.imgClass="profileImageBlue"
@@ -387,4 +387,3 @@ export const CARD_ELF: Card[] = []
 export const CARD_HUMAN: Card[] = []
 export const CARD_DECK2: Card[] = []
 export const mainPlayer: Card[] = []
-
